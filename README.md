@@ -37,7 +37,7 @@ our app is not scalable at the moment, but we want to scale it on demand. There 
 
 `kubectl`
 
-## Deployment of 3 pods using kubernetes
+## Deployment of app in 3 pods using kubernetes
 
 ![](images/k83.png)
 
@@ -52,3 +52,6 @@ All this is going to be done using a file.yml ->deploy-app.yml & svc-app.yml
 - to delete `kubectl delete deploy` & `kubectl delete svc`
 - to check if pods are running `kubectl get pods`
 - to get the info of a pod `kubectl describe <name of pod>`
+- to check if the replica set were created `kubectl get rs`
+- to check the configuration of file `kubectl describe deploy <name of deploy>`
+- to edit and increse the number of replicas `kubectl edit deploy <name of app>` this will pop up a new window where you can edit live the replicas 
