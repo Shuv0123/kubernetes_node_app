@@ -17,11 +17,8 @@ You need a scalable application that scale automatically in demand, a self heali
 - Automated rollouts and rollback
    - if we build a new image, deploy it and it does not work(throghs an error) it has an option to role to a previous version
 - Auto Scaling
-   - 
 - Automatic bin packing
-   -
 - Storage orchestration
-   -
 
 ## kubernetes architecture
 - When you deploy Kubernetes, you get a cluster.
@@ -43,3 +40,15 @@ our app is not scalable at the moment, but we want to scale it on demand. There 
 ## Deployment of 3 pods using kubernetes
 
 ![](images/k83.png)
+
+To create a scalable framework that scales on demand, self-heal and load balance, you need:
+- Create k8 deployment with 3 pods(from app images)
+- each app with their own specific ip
+- k8 replica set
+- ref https://learnk8s.io/deploying-nodejs-kubernetes
+All this is going to be done using a file.yml ->deploy-app.yml & svc-app.yml
+- After writing the files, create the files using `kubectl create -f app-deploy.yml` & `kubectl create -f app-svc.yml`
+- to run the files `kubectl get deploy` & `kubectl get svc`
+- to delete `kubectl delete deploy` & `kubectl delete svc`
+- to check if pods are running `kubectl get pods`
+- to get the info of a pod `kubectl describe <name of pod>`
