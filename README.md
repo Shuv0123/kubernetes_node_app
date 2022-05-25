@@ -38,3 +38,8 @@ our app is not scalable at the moment, but we want to scale it on demand. There 
 
 ## kubernetes commands
 
+`kubectl`
+
+## Deployment of 3 pods using kubernetes
+
+![](images/k83.png)
