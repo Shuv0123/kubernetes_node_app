@@ -18,6 +18,7 @@ You need a scalable application that scale automatically in demand, a self heali
    - if we build a new image, deploy it and it does not work(throghs an error) it has an option to role to a previous version
 - Auto Scaling
 - Automatic bin packing
+  - You provide Kubernetes with a cluster of nodes that it can use to run containerized tasks. You tell Kubernetes how much CPU and memory (RAM) each container needs. Kubernetes can fit containers onto your nodes to make the best use of your resources.
 - Storage orchestration
 
 ## kubernetes architecture
