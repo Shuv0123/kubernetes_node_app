@@ -35,9 +35,9 @@ You need a scalable application that scale automatically in demand, a self heali
 ## ReplicaSet
 ![](images/k84.png)
 
-- A ReplicaSet is a process that runs multiple instances of a Pod and keeps the specified number of Pods constant. Its purpose is to maintain the specified number of Pod instances running in a cluster at any given time to prevent users from losing access to their application when a Pod fails or is inaccessible.
+- A ReplicaSet is a process that runs multiple instances of a Pod and keeps the specified number of Pods constant at any given time. This prevent users from losing access to their application when a Pod fails or is inaccessible.
 
-- benefit of ReplicaSets is you can make live changes to the .yml file, and the user won't notice anything as the application will still be running.
+- benefit of ReplicaSets is file.yml can be edited while the cluster is running, without the user noticing anything as the application will still be running.
 
 ## Deployment of app in 3 pods using kubernetes
 
