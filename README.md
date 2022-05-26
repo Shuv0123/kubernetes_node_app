@@ -27,16 +27,6 @@ You need a scalable application that scale automatically in demand, a self heali
 - the container has node app runnning
 - each pod has its on specific ip on it, which means we have an end point to connect to
 
-![](images/kubernetes-architecture.png)
-
-
-## k8 deploys replicas
-our app is not scalable at the moment, but we want to scale it on demand. There are services in k8 
-
-## kubernetes commands
-
-`kubectl`
-
 ## Deployment of app in 3 pods using kubernetes
 
 ![](images/k83.png)
